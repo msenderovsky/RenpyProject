@@ -1,0 +1,22 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/scripts/script.rpy", line 153, in script
+    return
+Exception: Could not find return label ('game/scripts/script.rpy', 1720400941, 47).
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/scripts/script.rpy", line 153, in script
+    return
+  File "E:\Games\renpy-8.2.3-sdk\renpy\ast.py", line 1495, in execute
+    next_node(renpy.game.context().lookup_return(pop=True))
+  File "E:\Games\renpy-8.2.3-sdk\renpy\execution.py", line 741, in lookup_return
+    raise Exception("Could not find return label {!r}.".format(self.return_stack[-1]))
+Exception: Could not find return label ('game/scripts/script.rpy', 1720400941, 47).
+
+Windows-10-10.0.19041 AMD64
+Ren'Py 8.2.3.24061702
+Test 1.0
+Sun Jul  7 22:10:26 2024
